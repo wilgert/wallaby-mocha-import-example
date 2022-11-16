@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "types": ["node", "mocha"]
+  },
+  "include": ["./src/**/*", "./test/**/*"],
+  "exclude": ["node_modules", "wallaby.js"],
+}

@@ -1,0 +1,36 @@
+{
+  "name": "wallaby-mocha-import-example",
+  "private": true,
+  "version": "1.2.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "lint": "eslint --ext '.js,.jsx,.ts,.tsx' --fix src",
+    "test": "mocha -r ts-node/register/transpile-only 'test/**/*.spec.ts'",
+    "compile": "tsc -p . --noEmit",
+    "build": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.18.12",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unused-imports": "^1.0.0",
+    "husky": "^4.3.0",
+    "mocha": "^8.2.1",
+    "nanoid": "^3.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.6.2"
+  }
+}
